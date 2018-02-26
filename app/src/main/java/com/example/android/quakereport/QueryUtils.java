@@ -38,6 +38,8 @@ public final class QueryUtils {
 
         ArrayList<Earthquake> earthquakes = new ArrayList<>();
 
+
+
         try {
 
 
@@ -49,10 +51,11 @@ public final class QueryUtils {
                 JSONObject properties = currentEarthquake.getJSONObject("properties");
                 String location =properties.getString("place");
                 long time=properties.getLong("time");
+                String url = properties.getString("url");
 
                 double magnitude = properties.getDouble("mag");
 
-                Earthquake earthquake = new Earthquake(magnitude,location,time);
+                Earthquake earthquake = new Earthquake(magnitude,location,time,url);
                 earthquakes.add(earthquake);
             }
 
