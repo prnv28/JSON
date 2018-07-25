@@ -1,3 +1,6 @@
 Hello
 This is new file test.
-it's awesome[D[C.
+it's awesome.
+
+I asked. Really??it's a editing in file to check staging content.
+it is staged content.
